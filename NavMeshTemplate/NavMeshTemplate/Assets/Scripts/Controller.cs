@@ -7,10 +7,12 @@ public class Controller : MonoBehaviour
 {
     public NavMeshAgent meshAgent;
     public Camera cam;
+    public GameObject target;
 
     // Update is called once per frame
     void Update()
     {
+        meshAgent.SetDestination(target.transform.position);
         if (Input.GetMouseButtonDown(0)) // 0 indicates a left click
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition); // so this is a Camera method for a direct ray
