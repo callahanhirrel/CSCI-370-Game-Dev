@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 146628119}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Edges
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 427758798}
   - component: {fileID: 427758799}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EdgeBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,6 +372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chicken Sprite Animation
       objectReference: {fileID: 0}
+    - target: {fileID: 124424, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 471492, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -424,6 +428,58 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 142770, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 182452, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 187702, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 125574, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 112542, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 117474, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 172850, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 184380, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 156980, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 192546, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 153724, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 135234, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 181554, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 422160a32e526314fba5c0bc08ea5cd2, type: 3}
 --- !u!1 &883418094
@@ -436,7 +492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 883418095}
   - component: {fileID: 883418096}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EdgeTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -653,7 +709,7 @@ GameObject:
   - component: {fileID: 1259075297}
   - component: {fileID: 1259075296}
   - component: {fileID: 1259075298}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Chicken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -816,7 +872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689059524}
   - component: {fileID: 1689059525}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EdgeLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1053,3 +1109,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5a9ad20ef1e40f2a876a8ad604bf85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 8592332759446448148, guid: bf4a92d2b33624e50931298d92df8a13, type: 3}
