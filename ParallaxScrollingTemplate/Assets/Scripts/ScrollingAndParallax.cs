@@ -6,6 +6,8 @@ public class ScrollingAndParallax : MonoBehaviour
 {
     public Camera cam;
     public float bgSize;
+    public float parallaxSpeed;
+
     private Transform camTrans;
     private Transform[] layers;
     private float viewZone = 5f;
@@ -16,6 +18,7 @@ public class ScrollingAndParallax : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Scrolling
         camTrans = cam.transform;
         layers = new Transform[transform.childCount];
 
@@ -26,6 +29,9 @@ public class ScrollingAndParallax : MonoBehaviour
 
         leftIndex = 0;
         rightIndex = transform.childCount - 1;
+
+        // Parallax
+        camPos = camTrans.position.x;
     }
 
     private void ScrollLeft()
@@ -55,6 +61,7 @@ public class ScrollingAndParallax : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Scrolling
         if (camTrans.position.x < layers[leftIndex].position.x + viewZone)
         {
             ScrollLeft();
@@ -63,5 +70,10 @@ public class ScrollingAndParallax : MonoBehaviour
         {
             ScrollRight();
         }
-    }
+
+        // Parallax
+        float offset = camTrans.position.x - camPos;
+        transform.position += new Vector3(offset * parallaxSpeed, 0); // Vector3 or Vector2?
+        camPos = camTrans.position.x;
+    } 
 }
